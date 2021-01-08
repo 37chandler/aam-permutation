@@ -1,4 +1,4 @@
-employee_id	gender	location	tenure	satisfaction
+employee_id	assigned_sex	location	tenure	satisfaction
 AQ1600314	male	Seattle	0.9	4
 AQ1808649	male	Seattle	4.3	4
 AQ1850081	male	New York	1.2	4

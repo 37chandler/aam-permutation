@@ -1,3 +1,7 @@
+survey_tests_solution.rmd
+
+survey_tests_files/*
+
 # History files
 .Rhistory
 .Rapp.history
