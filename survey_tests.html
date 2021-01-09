@@ -492,8 +492,8 @@ ggplot(results,
 <p>As we can see from the histogram, the value we we saw, 0.583, is quite extreme. The proportion of observations this extreme or more extreme than this are 10^{-4}. The two-sided test has the same p-value: 10^{-4}</p>
 <p>In the following sections, I ask you to extend this test to a few other statistics and write up the answers to a few questions.</p>
 </div>
-<div id="satisfied-employees" class="section level3">
-<h3>Satisfied Employees</h3>
+<div id="portion-of-satisfied-employees" class="section level3">
+<h3>Portion of Satisfied Employees</h3>
 <p>Instead of looking at average satisfaction, let’s look at employees who give a score of 5, 6, or 7. Perform a permutation test estimating whether or not difference of this proportion (answering 5, 6, or 7) by assigned sex for males and females is likely the result of chance. As above, plot the distribution of the replicates and interpret the results.</p>
 <pre class="r"><code># to get you started, here&#39;s the initial proportion
 d %&gt;% 
@@ -531,6 +531,35 @@ d %&gt;%
 <div id="non-binary-satisfaction" class="section level3">
 <h3>Non-Binary Satisfaction</h3>
 <p>There are 10 non-binary employees. Based on this new measure of satisfaction (answering 5, 6, or 7), do we see different levels of satisfaction between our “neither” group and the female group? Please make a similar chart and interpret it.</p>
+<pre class="r"><code># Your code here</code></pre>
+</div>
+<div id="satisfaction-by-location" class="section level3">
+<h3>Satisfaction by Location</h3>
+<p>The headquarters of aQuantive were in Seattle, but about half the employees were in New York, the nexus of advertising in the US. The data show lower satisfaction for New York employees:</p>
+<pre class="r"><code>d %&gt;% 
+  group_by(location) %&gt;% 
+  summarize(`Mean Sat.`=mean(satisfaction)) %&gt;% 
+  knitr::kable()</code></pre>
+<pre><code>## `summarise()` ungrouping output (override with `.groups` argument)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">location</th>
+<th align="right">Mean Sat.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">New York</td>
+<td align="right">3.892617</td>
+</tr>
+<tr class="even">
+<td align="left">Seattle</td>
+<td align="right">4.033113</td>
+</tr>
+</tbody>
+</table>
+<p>In this section, perform a permutation test on satisfaction by location and report the results.</p>
 <pre class="r"><code># Your code here</code></pre>
 </div>
 <div id="median-satisfaction" class="section level3">

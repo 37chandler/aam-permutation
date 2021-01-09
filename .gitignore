@@ -1,6 +1,7 @@
-survey_tests_solution.rmd
+survey_tests_solution.*
 
 survey_tests_files/*
+survey_tests_solution_files/*
 
 # History files
 .Rhistory
