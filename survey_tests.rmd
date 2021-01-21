@@ -191,7 +191,7 @@ with the most critical assumption being that the relationship is linear. In this
 section, describe how you could carry out a test of significance with the `cor.test`
 function. This function uses a result from almost 100 years ago that the standard
 deviation of the correlation coefficient is $\frac{r \sqrt(n-2)}{\sqrt(1-r^2)}$ that 
-relies on a mathematically sophisticated using the method of moments. 
+relies on a mathematically sophisticated approach that uses the method of moments. 
 
 Alternatively, you could test the significance using a permutation test. In this section,
 give some detail for the key steps you'd take to test the significance of the 
