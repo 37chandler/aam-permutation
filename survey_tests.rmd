@@ -1,7 +1,15 @@
 ---
-title: "Survey Tests"
-author: "John Chandler"
-output: html_document
+title: "Easement Classification"
+author: "Your Name Here"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+html_document:
+    toc: true
+    toc_depth: 6
+    number_sections: true
+    toc_float: true
+    code_folding: hide
+    theme: flatly
+    code_download: true
 ---
 
 ```{r setup, include=FALSE}
