@@ -60,8 +60,10 @@ d %>%
 The original question from HR was whether or not the difference between males and 
 females is due to chance. 
 
-Since the survey represents a census, we shouldn't do something simple, like a t-test,
-that's designed to test for the difference between means. Instead we can test whether or 
+Since the survey represents a census, we can't do something that's based on a 
+sample, like a t-test. The t-test _does_ test for the difference between means, but 
+it assumes you have samples from a larger population. Permutation tests come to our
+rescue, however, and we can instead test whether or 
 not the association between the "labels" of assigned sex and the "scores" of satisfaction are 
 is likely if the two columns are independent. 
 
